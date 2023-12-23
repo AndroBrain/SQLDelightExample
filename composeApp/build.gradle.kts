@@ -57,6 +57,13 @@ kotlin {
             implementation(libs.sqldelight.native)
         }
     }
+    sqldelight {
+        databases {
+            create("YourDatabaseName") {
+                packageName = "com.example"
+            }
+        }
+    }
 }
 
 android {
