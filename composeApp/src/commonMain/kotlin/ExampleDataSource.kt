@@ -4,7 +4,7 @@ import com.example.YourDatabaseName
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 
-class ExampleDataSource(private val db: YourDatabaseName) {
+class ExampleDataSource(db: YourDatabaseName) {
     private val queries = db.exampleEntityQueries
 
     //    Set id = null to let SQLDelight autogenerate the id
